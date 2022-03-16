@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+/* TO-DO : Remove after testing */
+h1 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  opacity: 0.2;
+  z-index: 2;
+}
+
+#canvas {
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.firstCtrlPanel {
+  position: relative;
+  left: calc((1920px - var(--panelWidth)) / 2);
+  top: 900px;
+  --panelWidth: 900px;
+  width: var(--panelWidth);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 2;
+  background-color: #eeeeee;
+  border-radius: 30px;
+}
+
+.menuBtn {
+  width: 150px;
+  height: 80px;
+  font-size: 26px;
+  border-radius: 20px;
+}
+
+.secondCtrlPanel {
+}

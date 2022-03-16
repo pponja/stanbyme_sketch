@@ -1,13 +1,11 @@
 {
   "id": "com.app.stanbymesketch",
   "version": "1.0.0",
-  "vendor": "My Company",
+  "vendor": "LG Electronics.",
   "type": "web",
   "main": "index.html",
   "title": "Sketch",
   "icon": "icon.png",
-  "requiredPermissions": [
-    "time.query",
-    "activity.operation"
-  ]
+  "largeicon": "largeIcon.png",
+  "supportTouchMode": "full"
 }
