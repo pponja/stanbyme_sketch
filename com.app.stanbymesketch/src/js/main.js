@@ -10,8 +10,8 @@ let lastPos = currPos;
 let lineWidth = 2;
 let strokeStyle = '#000000'; // black
 let fillStyle = '#FFFFFF'; // white
-let scaleX = window.innerWidth / canvas.width;
-let scaleY = window.innerHeight / canvas.height;
+let scaleX = canvas.width / window.innerWidth;
+let scaleY = canvas.height / window.innerHeight;
 
 // get Mouse position
 function getMousePos(event) {
@@ -37,8 +37,6 @@ function handleDrawStart(event) {
     } else if(event.type === 'touchstart') {
         lastPos = getTouchPos(event)
     }
-
-    console.log("[main.js] handleDrawStart - x:"+lastPos.x+", y:"+lastPos.y)
 
     isDrawing = true
 }
