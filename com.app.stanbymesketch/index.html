@@ -14,11 +14,17 @@ SPDX-License-Identifier: Apache-2.0
     <canvas id="canvas" width="1270" height="710"></canvas>
     <h1>Hello, This is test text!!</h1>
     <div class="firstCtrlPanel">
-      <button class="menuBtn" id="drawMenu">Draw</button>
+      <button class="menuBtn" id="drawMenu" onclick="selectDraw()">Draw</button>
       <button class="menuBtn" id="picMenu">Picture</button>
       <button class="menuBtn" id="undoredoMenu">Undo/Redo</button>
       <button class="menuBtn" id="templateMenu">Template</button>
       <button class="menuBtn" id="txtMenu">Text</button>
+    </div>
+    <div class="secondCtrlPanel">
+      <button class="menuBtn" id="line" onclick="selectShape(this.id)">Line</button>
+      <button class="menuBtn" id="circle" onclick="selectShape(this.id)">Circle</button>
+      <button class="menuBtn" id="triangle" onclick="selectShape(this.id)">Triangle</button>
+      <button class="menuBtn" id="rectangle" onclick="selectShape(this.id)">Rectangle</button>
     </div>
     <script src="./src/js/main.js"></script>
   </body>

@@ -25,7 +25,7 @@ h1 {
   margin-left: 10px;
 }
 
-.firstCtrlPanel {
+.firstCtrlPanel, .secondCtrlPanel {
   position: relative;
   left: calc((1920px - var(--panelWidth)) / 2);
   top: 900px;
@@ -40,6 +40,11 @@ h1 {
   border-radius: 30px;
 }
 
+.secondCtrlPanel {
+  visibility: hidden;
+  top: 780px;
+}
+
 .menuBtn {
   width: 150px;
   height: 80px;
@@ -47,5 +52,3 @@ h1 {
   border-radius: 20px;
 }
 
-.secondCtrlPanel {
-}
